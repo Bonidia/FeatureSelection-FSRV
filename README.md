@@ -61,10 +61,10 @@ Algorithm =  Genetic Algorithm/Metaheuristic
 
 dataset.csv = file with features
 
-This example will generate a csv file with the selected features.
 ```
+This example will generate a csv file with the selected features.
 
-**Note** Input samples for feature selection must be in csv format.
+**Note:** Input samples for feature selection must be in csv format.
 
 ## About
 
