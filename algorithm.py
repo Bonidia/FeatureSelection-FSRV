@@ -47,7 +47,7 @@ class individual:
 	def set_fitness(self):
 		ind_X_train = X_train.iloc[:, self.bool_index]
 		ind_X_train = np.array(ind_X_train)
-		fitness = merit_calculation(ind_X_train, y_train) + self.acc
+		fitness = merit_calculation(ind_X_train, y_train) + (self.acc - 1)
 		return fitness
 
 
