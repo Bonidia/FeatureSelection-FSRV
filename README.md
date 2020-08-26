@@ -76,7 +76,9 @@ This example will generate a training and test file.
 
 **Note:** Input samples for feature selection must be in csv format.
 
-**Dataset:** It is important that the csv file contains the following format: feat1, feat2, ..., featk, label - **The label/class must be the last column.**
+**Dataset:** It is important that the csv file contains the following format: feat1, feat2, ..., featk, label
+
+**The label/class** must be the last column.
 
 
 **Running**
