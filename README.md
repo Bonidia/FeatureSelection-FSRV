@@ -55,7 +55,7 @@ $ pip3 install -r requirements.txt
 
 ## Usange and Examples
 
-### Split dataset into training and testing
+## Split dataset into training and testing
 
 Firstly, it is necessary to separate the dataset in training and testing. We will only use the training set for feature selection. The test set will be used to generate a final report with the efficiency of the best feature subset.
 
@@ -71,20 +71,22 @@ Where:
 -r - TEST_RATE - e.g., 0.2, 0.3
 ```
 
+
+This example will generate a training and test file.
+
+**Note:** Input samples for feature selection must be in csv format.
+
+**Dataset:** It is important that the csv file contains the following format: feat1, feat2, ..., featk, label - **The label/class must be the last column.**
+
+
 **Running**
 
 ```sh
 python3.7 split_train_test.py -i lncRNA.csv -r 0.2
 ```
 
-This example will generate a training and test file.
 
-**Note:** Input samples for feature selection must be in csv format.
-
-**Dataset:** It is important that the csv file contains the following format: feat1, feat2, ..., featk, label - The label/class must be the last column.
-
-
-### **GA-CFS** Decomposing Model with Genetic Algorithm (Fitness = CFS (Filter Approach - Main))
+## **GA-CFS** Decomposing Model with Genetic Algorithm (Fitness = CFS (Filter Approach - Main))
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -101,12 +103,6 @@ Where:
                     4 = GaussianNB, 5 = GradientBoosting, 6 = Bagging, 7 = AdaBoost, 8 = MLP
 ```
 
-**Running**
-
-```sh
-python3.7 GA-CFS.py -train training.csv -test testing.csv -classifier 2
-```
-
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
@@ -115,7 +111,13 @@ This example will generate a csv file with the selected features.
 **Note 4:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
 
-### **GA-CFS-ACC:** Decomposing Model with Genetic Algorithm (Fitness = CFS and ACC - Hybrid)
+**Running**
+
+```sh
+python3.7 GA-CFS.py -train training.csv -test testing.csv -classifier 2
+```
+
+## **GA-CFS-ACC:** Decomposing Model with Genetic Algorithm (Fitness = CFS and ACC - Hybrid)
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -132,11 +134,6 @@ Where:
                     4 = GaussianNB, 5 = GradientBoosting, 6 = Bagging, 7 = AdaBoost, 8 = MLP
 ```
 
-**Running**
-
-```sh
-python3.7 GA-CFS-ACC.py -train training.csv -test testing.csv -classifier 2
-```
 
 This example will generate a csv file with the selected features.
 
@@ -144,7 +141,14 @@ This example will generate a csv file with the selected features.
 **Note 2:** We will only use the training set for feature selection. 
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
-### **GA-wrapper** Decomposing Model with Genetic Algorithm (Wrapper approach)
+
+**Running**
+
+```sh
+python3.7 GA-CFS-ACC.py -train training.csv -test testing.csv -classifier 2
+```
+
+## **GA-wrapper** Decomposing Model with Genetic Algorithm (Wrapper approach)
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -161,19 +165,21 @@ Where:
                     4 = GaussianNB, 5 = GradientBoosting, 6 = Bagging, 7 = AdaBoost, 8 = MLP
 ```
 
-**Running**
-
-```sh
-python3.7 GA-wrapper.py -train training.csv -test testing.csv -classifier 2
-```
-
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
 **Note 2:** We will only use the training set for feature selection. 
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
-### **PSO-wrapper** Decomposing Model with Particle Swarm Optimization (Wrapper approach)
+
+**Running**
+
+```sh
+python3.7 GA-wrapper.py -train training.csv -test testing.csv -classifier 2
+```
+
+
+## **PSO-wrapper** Decomposing Model with Particle Swarm Optimization (Wrapper approach)
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -190,17 +196,18 @@ Where:
                     4 = GaussianNB, 5 = GradientBoosting, 6 = Bagging, 7 = AdaBoost, 8 = MLP
 ```
 
-**Running**
-
-```sh
-python3.7 PSO-wrapper.py -train training.csv -test testing.csv -classifier 2
-```
-
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
 **Note 2:** We will only use the training set for feature selection. 
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
+
+
+**Running**
+
+```sh
+python3.7 PSO-wrapper.py -train training.csv -test testing.csv -classifier 2
+```
 
 
 ## About
