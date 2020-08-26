@@ -106,8 +106,11 @@ Where:
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
+
 **Note 2:** In this algorithm, the classifier will be used to generate the final report.
+
 **Note 3:** We will only use the training set for feature selection. 
+
 **Note 4:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
 
@@ -138,7 +141,9 @@ Where:
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
+
 **Note 2:** We will only use the training set for feature selection. 
+
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
 
@@ -168,7 +173,9 @@ Where:
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
+
 **Note 2:** We will only use the training set for feature selection. 
+
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
 
@@ -199,7 +206,9 @@ Where:
 This example will generate a csv file with the selected features.
 
 **Note 1:** Input samples for feature selection must be in csv format.
+
 **Note 2:** We will only use the training set for feature selection. 
+
 **Note 3:** The test set will be used to generate a final report with the efficiency of the best feature subset.
 
 
