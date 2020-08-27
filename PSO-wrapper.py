@@ -415,7 +415,7 @@ att_rates = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1]
 n_voted_solutions = len(att_rates)
 max_stagnant_round = 2
 best_round = int()
-sampling = 15
+sampling = 1
 a = 0.99
 b = 0.01
 
@@ -515,7 +515,7 @@ for s in range(sampling + 1):
 			best_round = Round
 			total_time = sum(Times)
 			round_1_alg_results = update_results(round_1_alg_results, best_solution, 'alg')
-			save_results(round_1_alg_results, round_1 = True)
+			save_results(round_1_alg_results, round_1 = False)
 
 		if verify_round_stagnation():
 			break
