@@ -119,7 +119,7 @@ This example will generate a csv file with the selected features.
 **Running**
 
 ```sh
-python3.7 GA-CFS.py -train training.csv -test testing.csv -classifier 2
+python3.7 GA-CFS.py -train training.csv -test testing.csv -classifier 0
 ```
 
 ## **GA-CFS-ACC:** Decomposing Model with Genetic Algorithm (Fitness = CFS and ACC - Hybrid)
@@ -152,7 +152,7 @@ This example will generate a csv file with the selected features.
 **Running**
 
 ```sh
-python3.7 GA-CFS-ACC.py -train training.csv -test testing.csv -classifier 2
+python3.7 GA-CFS-ACC.py -train training.csv -test testing.csv -classifier 3
 ```
 
 ## **GA-wrapper** Decomposing Model with Genetic Algorithm (Wrapper approach)
