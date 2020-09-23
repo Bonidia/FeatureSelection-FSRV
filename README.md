@@ -53,7 +53,7 @@ $ cd FeatureSelection-FSRV
 $ pip3 install -r requirements.txt
 ```
 
-## Usange and Examples
+## Usage and Examples
 
 ## Split dataset into training and testing
 
