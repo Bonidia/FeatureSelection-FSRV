@@ -12,8 +12,18 @@
 
 If you use this code in a scientific publication, we would appreciate citations to the following paper:
 
-Submitted
+R. P. Bonidia et al., "A Novel Decomposing Model With Evolutionary Algorithms for Feature Selection in Long Non-Coding RNAs," in IEEE Access, vol. 8, pp. 181683-181697, 2020, doi: 10.1109/ACCESS.2020.3028039.
 
+```sh
+@ARTICLE{9210051,
+  author={R. P. {Bonidia} and J. S. {Machida} and T. C. {Negri} and W. A. L. {Alves} and A. Y. {Kashiwabara} and D. S. {Domingues} and A. {De Carvalho} and A. R. {Paschoal} and D. S. {Sanches}},
+  journal={IEEE Access}, 
+  title={A Novel Decomposing Model With Evolutionary Algorithms for Feature Selection in Long Non-Coding RNAs}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={181683-181697},}
+```
 
 ## List of files
 
@@ -88,7 +98,7 @@ python3.7 split_train_test.py -i lncRNA.csv -r 0.2
 ```
 
 
-## **GA-CFS** Decomposing Model with Genetic Algorithm (Fitness = CFS (Filter Approach - Main))
+## **GA-CFS:** Decomposing Model with Genetic Algorithm (Fitness = CFS (Filter Approach - Main))
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -155,7 +165,7 @@ This example will generate a csv file with the selected features.
 python3.7 GA-CFS-ACC.py -train training.csv -test testing.csv -classifier 3
 ```
 
-## **GA-wrapper** Decomposing Model with Genetic Algorithm (Wrapper approach)
+## **GA-wrapper:** Decomposing Model with Genetic Algorithm (Wrapper approach)
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -188,7 +198,7 @@ python3.7 GA-wrapper.py -train training.csv -test testing.csv -classifier 2
 ```
 
 
-## **PSO-wrapper** Decomposing Model with Particle Swarm Optimization (Wrapper approach)
+## **PSO-wrapper:** Decomposing Model with Particle Swarm Optimization (Wrapper approach)
 
 ```sh
 Access folder: $ cd FeatureSelection-FSRV
@@ -225,4 +235,15 @@ python3.7 PSO-wrapper.py -train training.csv -test testing.csv -classifier 2
 
 If you use this code in a scientific publication, we would appreciate citations to the following paper:
 
-Submitted
+R. P. Bonidia et al., "A Novel Decomposing Model With Evolutionary Algorithms for Feature Selection in Long Non-Coding RNAs," in IEEE Access, vol. 8, pp. 181683-181697, 2020, doi: 10.1109/ACCESS.2020.3028039.
+
+```sh
+@ARTICLE{9210051,
+  author={R. P. {Bonidia} and J. S. {Machida} and T. C. {Negri} and W. A. L. {Alves} and A. Y. {Kashiwabara} and D. S. {Domingues} and A. {De Carvalho} and A. R. {Paschoal} and D. S. {Sanches}},
+  journal={IEEE Access}, 
+  title={A Novel Decomposing Model With Evolutionary Algorithms for Feature Selection in Long Non-Coding RNAs}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={181683-181697},}
+```
